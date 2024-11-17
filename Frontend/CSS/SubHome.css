@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Sofadi+One&display=swap');
+
+.SH-HomeContainer {
+    position: relative;
+    z-index: 1;
+}
+
+.SH-videosClassNine {
+    display: flex;
+    padding: 15px;
+    padding-left: 25px;
+    margin-top: 1cm;
+    color: black;
+    justify-content: space-between;
+}
+
+.SH-ClassNineVideos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    animation: fade-in linear;
+    animation-timeline: view();
+    animation-range-end: 28%;
+}
+
+@keyframes fade-in {
+    from {
+        scale: .5;
+    }
+
+    to {
+        scale: 1;
+    }
+}
+
+.SH-fArrow {
+    display: flex;
+    height: 18%;
+    border: 2px solid #dcdcdc;
+    padding: 25px;
+    cursor: pointer;
+    position: absolute;
+    background-color: #dcdcdc;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    right: 0;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.SH-ClassNine {
+    background-color: white;
+    padding: 15px;
+    user-select: none;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+    border: 2px solid #7ef00533;
+    width: 22%;
+    text-wrap: wrap;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: .3s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.SH-imgSrc {
+    width: 94%;
+    border: 11px solid black;
+}
+
+.SH-button {
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-family: "Exo 2";
+    font-size: 18px;
+    margin-top: 10px;
+    background-color: transparent;
+
+    &:hover {
+        background-color: black;
+        color: white;
+    }
+}
+
+.SH-videoName {
+    font-family: 'Rubik';
+    font-weight: bold;
+}
+
+.SH-subjectClass {
+    display: flex;
+    font-family: "Chakra Petch", sans-serif;
+    justify-content: space-between;
+    color: #d5d5d5;
+    font-weight: bold;
+}
+
+.SH-ChannelName {
+    font-family: "Chakra Petch", sans-serif;
+    color: #d5d5d5;
+    font-weight: bold;
+}
+
+/* ------------------------Responsive------------------------------ */
+
+@media (max-width: 1030px) {
+    body {
+        overflow-x: hidden;
+    }
+}
+
+@media (max-width: 701px) {
+    .SH-ClassNineVideos {
+        flex-direction: column;
+        gap: 0.5cm;
+    }
+
+    .SH-ClassNine {
+        width: 80%;
+        margin: auto;
+    }
+}

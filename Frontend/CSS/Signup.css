@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/* styles.css */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.SU-sigern {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.SU-logoType {
+    width: 7cm;
+    height: 7cm;
+    animation: roundaboat 10s linear infinite;
+    transition: .5s;
+    cursor: pointer;
+
+    &:hover {
+        animation: none;
+    }
+}
+
+@keyframes roundaboat {
+
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.SU-container {
+    display: flex;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    max-width: 900px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.SU-illustration {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.SU-alerts {
+    border-radius: 0.375rem;
+    background-color: #d1e7dd;
+    color: #0a3622;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+    border: 1px solid #a3cfbb;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.SU-alertd {
+    border-radius: 0.375rem;
+    background-color: #f8d7da;
+    color: #58151c;
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 5px;
+    border: 1px solid #f1aeb5;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+.SU-formContainer {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.SU-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.SU-h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Lemon';
+}
+
+.SU-label {
+    margin-bottom: 5px;
+}
+
+.SU-inputField {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 70%;
+    outline: none;
+
+    &:focus {
+        border: 2px solid #ff7e5f;
+    }
+}
+
+.SU-button {
+    background: #ff7e5f;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    width: 75%;
+}
+
+.SU-button:hover {
+    background: #feb47b;
+}
+
+.SU-p {
+    font-family: 'Lemon';
+    margin-top: 10px;
+}
+
+.SU-a {
+    color: #ff7e5f;
+    text-decoration: none;
+}
+
+.SU-a:hover {
+    text-decoration: underline;
+}
+
+.SU-eeror {
+    color: red;
+    font-family: 'Ubuntu';
+}
+
+@media (max-width: 768px) {
+    .SU-container {
+        flex-direction: column;
+    }
+
+    .SU-illustration {
+        display: none;
+    }
+}
